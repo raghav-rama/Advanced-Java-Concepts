@@ -10,7 +10,7 @@ public class Main {
         @Override
         public int add(int a, int b) {
             System.out.println("Anon class");
-            return a+b;;
+            return a+b;
         }
     });
     eval.add(3,4);
