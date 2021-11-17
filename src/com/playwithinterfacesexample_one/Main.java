@@ -2,9 +2,10 @@ package com.playwithinterfacesexample_one;
 
 public class Main {
 
+    @SuppressWarnings("removal")
     public static void main(String... args) {
     Evaluate eval = new Evaluate();
-    Integer a = new Integer(5);
+    Integer a = new Integer(5);// I know this is deprecated
     EvaluateAdd eval_add = new EvaluateAdd();
     eval_add.display(new InterfaceContainer.Add() {
         @Override
