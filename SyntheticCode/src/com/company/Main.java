@@ -1,5 +1,11 @@
 package com.company;
 
+/**
+ * <b>{@code JDK verion 17.0.1}</b><br>
+* THIS PROJECT IS SORT OF A FORK OF THE FOLLOWING GITHUB REPO<br>
+* <a href="https://github.com/root0109/synthetic-concept">Click here to open in browser</a>
+ */
+
 public class Main {
 
     public static void main(String[] args) {
