@@ -16,11 +16,11 @@ public class SyntheticTest {
      *
      * <h1>Java 17 vs Java 8</h1>
      * <h2>Synthetic code emitted after compilation</h2>
-     * If this class is compiled by Java 8, it emits <br>{@code final com.company.SyntheticTest this$0}<br>
+     * If this class is compiled by Java 8, it emits following 4 : <br>{@code final com.company.SyntheticTest this$0}<br>
      * {@code static java.lang.String access$1(com.company.SyntheticTest$NestedClass);}<br>
      * {@code static java.lang.String access$2(com.company.SyntheticTest$NestedClass);}<br>
      * {@code static java.lang.String access$3(com.company.SyntheticTest$NestedClass);}<br>
-     * whereas if compiled by Java 17 only {@code this$0} is emitted<br>
+     * <br> whereas if compiled by Java 17 only {@code this$0} is emitted<br>
      * and less synthetic functions mean more performance vro ;)
       */
     private final class NestedClass {
