@@ -5,31 +5,25 @@ import java.util.Arrays;
 public class EllysGame {
     private final char NULL = '\u0000';
     private final char UP='^',DOWN='v',RIGHT='>',LEFT='<', DOT='.';
-    private char flowDirection=NULL;
+    private char flowDirection;
 
     public static void main(String args[]) {
         EllysGame elly = new EllysGame();
 //        String[] board = {">>>><<<<"};
-        String[] board = {"vv.^>>"
-                        ,".^.<>."
-                        ,">>.^>v"
-                        ,".^v>.."
-                        ,"^^...<"};
+        String[] board = {">>>><<<<"};
         System.out.println(elly.getMax(board));
-        System.out.println(board[0]);
     }
     int getMax(String[] board) {
-        char nextCharacter;
         int counter=0;
         int rows = board.length;
         int columns = board[0].length();
         int[] totalSeconds = new int[rows * columns];
-        for (int i = 0; i < board.length; i++) {
-            for (int j = 0; j < board[i].length(); j++) {
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
                 char ch = board[i].charAt(j);
                 String[] boardDuplicate = board.clone();
+                flowDirection = NULL;
                 totalSeconds[counter++] = getMaxSeconds(boardDuplicate, i, j, ch);
-                System.out.println(boardDuplicate[0]);
             }
         }
         Arrays.sort(totalSeconds);
@@ -60,16 +54,19 @@ public class EllysGame {
                     arr[j] = '.';
                     board[i--] = String.valueOf(arr);
                     flowDirection = currentChar;
-                }
-                else if(currentChar == DOT) {
-                    currentChar = flowDirection;
+                } else if(currentChar == DOT) {
+                    if(flowDirection == NULL)
+                        return 0;
+                    else
+                        currentChar = flowDirection;
                     continue;
                 }
                 ++counter;
                 currentChar = board[i].charAt(j);
             }
         }
-        catch(Exception e){
+        catch(Exception e) {
+            System.out.println("caught");
             return counter;
         }
         return counter;
