@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class EllysGame {
     private final char NULL = '\u0000';
+    private int rows, columns;
     private final char UP='^',DOWN='v',RIGHT='>',LEFT='<', DOT='.';
     private char flowDirection;
 
@@ -15,8 +16,8 @@ public class EllysGame {
     }
     int getMax(String[] board) {
         int counter=0;
-        int rows = board.length;
-        int columns = board[0].length();
+        rows = board.length;
+        columns = board[0].length();
         int[] totalSeconds = new int[rows * columns];
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < columns; j++) {
@@ -32,8 +33,7 @@ public class EllysGame {
 
     private int getMaxSeconds(String[] board, int i, int j, char currentChar) {
         int counter = 0;
-        try {
-            while (i < board.length & j < board[i].length()) {
+            while (iInRange(i) && jInRange(j)) {
                 if (currentChar == RIGHT) {
                     char[] arr = board[i].toCharArray();
                     arr[j++] = '.';
@@ -62,13 +62,16 @@ public class EllysGame {
                     continue;
                 }
                 ++counter;
-                currentChar = board[i].charAt(j);
+                if(iInRange(i) && jInRange(j))
+                    currentChar = board[i].charAt(j);
             }
-        }
-        catch(Exception e) {
-            System.out.println("caught");
-            return counter;
-        }
         return counter;
     }
+    private boolean iInRange(int i){
+        return 0<=i && i<rows;
+    }
+    private boolean jInRange(int j){
+        return 0<=j && j<columns;
+    }
+
 }
