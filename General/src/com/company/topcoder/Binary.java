@@ -1,4 +1,4 @@
-package com.company;
+package com.company.topcoder;
 
 public class Binary {
     public static void main(String args[]) {

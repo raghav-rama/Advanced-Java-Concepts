@@ -1,4 +1,4 @@
-package com.company;
+package com.company.topcoder;
 
 import java.util.Arrays;
 

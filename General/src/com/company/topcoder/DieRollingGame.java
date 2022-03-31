@@ -1,4 +1,4 @@
-package com.company;
+package com.company.topcoder;
 
 public class DieRollingGame {
     public double winChance(int n, int total) {

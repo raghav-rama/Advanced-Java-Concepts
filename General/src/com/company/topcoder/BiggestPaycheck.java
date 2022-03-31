@@ -1,4 +1,4 @@
-package com.company;
+package com.company.topcoder;
 
 public class BiggestPaycheck {
     int findBiggest(int a, int b, int c) {
