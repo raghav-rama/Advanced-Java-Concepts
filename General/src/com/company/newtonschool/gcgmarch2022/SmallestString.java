@@ -1,4 +1,4 @@
-package com.company.newtonschool;
+package com.company.newtonschool.gcgmarch2022;
 
 import java.util.Scanner;
 
