@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/General.iml" filepath="$PROJECT_DIR$/General.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java 11/Java 11.iml" filepath="$PROJECT_DIR$/Java 11/Java 11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java 17/Java 17.iml" filepath="$PROJECT_DIR$/Java 17/Java 17.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java 8/Java 8.iml" filepath="$PROJECT_DIR$/Java 8/Java 8.iml" />
     </modules>
   </component>
 </project>
