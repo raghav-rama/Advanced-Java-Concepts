@@ -8,7 +8,7 @@ public class EllysGame {
     private final char UP='^',DOWN='v',RIGHT='>',LEFT='<', DOT='.';
     private char flowDirection;
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         EllysGame elly = new EllysGame();
 //        String[] board = {">>>><<<<"};
         String[] board = {">>>><<<<"};

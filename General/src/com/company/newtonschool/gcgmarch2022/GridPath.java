@@ -8,10 +8,9 @@ public class GridPath {
         int T = sc.nextInt();
         String[] result = new String[T];
         while(T-- > 0) {
-            ;
         }
     }
-    private String solve(int arr[][]) {
+    private String solve(int[][] arr) {
 
         return null;
     }

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class BagPacking {
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 //        int[] a = {1,2,3,2,1,2,3,4,1,7};
         int[] a = {1,2,3,2,1,2,3,4,1,7,2,3,5,4,6,7,3,2,7,6,3,4,5};
         Arrays.sort(a);

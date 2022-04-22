@@ -1,6 +1,5 @@
 package com.company.codechef.COOK140D;
 
-import org.jetbrains.annotations.NotNull;
 
 import java.util.*;
 
@@ -20,7 +19,7 @@ public class RECSTI {
             input(num, sc.nextInt(), j++);
         }
     }
-    static void input(@NotNull ArrayList<ArrayList<Integer>> num, int n, int j) {
+    static void input(ArrayList<ArrayList<Integer>> num, int n, int j) {
         for(int i=0; i<n; ++i)
             num.get(j).add(sc.nextInt());
     }
